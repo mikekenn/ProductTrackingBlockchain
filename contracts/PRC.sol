@@ -8,6 +8,14 @@ contract PRC {
   // Define struct
   struct product {
     TODO
+    int= _productId;
+    string= _productName;
+    string= _productOwner;
+    int= _productCost;
+    int= _productSalePrice;
+    uint= _productCurrentTimeStamp;
+    address= _BacAddress;
+
     //Team: To Create attributs/Define structure of product.
   }
 
