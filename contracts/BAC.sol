@@ -7,13 +7,13 @@ contract BAC {
 
   // Define struct
   struct batch {
-    TODO
-    string= _farmerName;
-    int= _farmerId;
-    int= _date;
-    int= _weight;
-    int= _price;
-    string= _country;
+
+    string = _farmerName;
+    int = _farmerId;
+    int = _date;
+    int = _weight;
+    int = _price;
+    string = _country;
 
     //Team: To Create attributs/Define structure of batch.
   }
