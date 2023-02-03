@@ -11,10 +11,10 @@ contract BAC {
     string= _farmerName;
     int= _farmerId;
     int= _date;
-    int= _wait;
+    int= _weight;
     int= _price;
     string= _country;
-    
+
     //Team: To Create attributs/Define structure of batch.
   }
 
