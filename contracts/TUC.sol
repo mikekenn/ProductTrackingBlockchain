@@ -3,13 +3,22 @@ pragma solidity ^ 0.4 .10;
 contract TUC {
 
   // Mapping from user address to boolean type
-  //mapping(address => bool) isAuthorized;
+  mapping(address => bool) isAuthorized;
 
   // Define struct
   struct tr {
-    TODO
-    //Team: To Create attributs/Define structure of Transaction Update Contract.
+    string _currentTx;
+    string _previousTx;
+    address _sender;
+    string _receiver;
+    uint _time;
   }
+
+  mapping(uint => tr) trs;
+
+  uint _numberOfTrs;
+
+  address _batchAdmin;
 
   // As a prerequisite for some functions
   modifier onlyAdmin {
