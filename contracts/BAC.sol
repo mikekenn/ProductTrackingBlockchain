@@ -3,20 +3,26 @@ pragma solidity ^ 0.4 .10;
 contract BAC {
 
   // Mapping from user address to boolean type
-  //mapping(address => bool) isAuthorized;
+  mapping(address => bool) isAuthorized;
 
   // Define struct
   struct batch {
-
-    string = _farmerName;
-    int = _farmerId;
-    int = _date;
-    int = _weight;
-    int = _price;
-    string = _country;
-
-    //Team: To Create attributs/Define structure of batch.
+    string _productBatch;
+    string _materialBatch;
+    address _batchManager;
+    address _TUCAddress;
+    uint _addTime;
   }
+  
+  mapping(uint => batch) _batchs;
+
+  mapping(string => address) _batchToAddress;
+
+  mapping(address => string) _addressToBatch;
+
+  uint _numberOfBatchs;
+
+  address _productAdmin;
 
   // As a prerequisite for some functions
   //modifier onlyAdmin {
