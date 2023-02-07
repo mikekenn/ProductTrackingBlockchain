@@ -3,21 +3,28 @@ pragma solidity ^ 0.4 .10;
 contract PRC {
 
   // Mapping from user address to boolean type
-  //mapping(address => bool) isAuthorized;
+  mapping(address => bool) isAuthorized;
 
   // Define struct
   struct product {
-
-    int = _productId;
-    string = _productName;
-    string = _productOwner;
-    int = _productCost;
-    int = _productSalePrice;
-    uint = _productCurrentTimeStamp;
-    address = _BacAddress;
-
-    //Team: To Create attributs/Define structure of product.
+    string _productName;
+    string _productCode;
+    string _rawMaterials;
+    address _productOwner;
+    uint _timestamp;
+    address _BACAddress;
   }
+  
+  mapping(uint => product) _products;
+
+  mapping(string => uint) _productCodeToId;
+
+  uint _numberOfProducts;
+
+  address _admin;
+
+  mapping(string => string) _productCodeToName;
+  mapping(string => address) _productCodeToBACAddress;
 
   // As a prerequisite for some functions
   //modifier onlyAdmin {
