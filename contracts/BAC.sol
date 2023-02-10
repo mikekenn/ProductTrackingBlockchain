@@ -48,7 +48,6 @@ contract BAC {
     // A constructor can be either public or internal.
     // A internal constructor marks the contract as abstract.
     // In case, no constructor is defined, a default constructor is present in the contract.
-
   constructor() public {
     _productAdmin = msg.sender;
     _numberOfBatchs = 1;
